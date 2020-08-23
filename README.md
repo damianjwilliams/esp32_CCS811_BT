@@ -20,10 +20,11 @@ Arduino and python code for streaming CCS811 sensor data over Bluetooth. The mea
 
 An overview of the process can be found on [Youtube](https://www.youtube.com/watch?v=l7pM1rQDjBs). The instructions are for Windows 10, but easily adapted for OSX, etc.
 
-Upload ESP32 code and libraries described in the links above. An overview of the process can be found on Youtube.
+Upload ESP32 code and libraries described in the links above. A
 
-Once the code is uploaded, "The device started, now you can pair it with bluetooth!" is shown on the arduino serial monitor and environmental data begins to appear. "ESP32_enviroment_sensor"); //Bluetooth device name
-  Serial.println("The device started, now you can pair it with bluetooth!");
+Once the code is uploaded, "The device started, now you can pair it with bluetooth!" is shown on the arduino serial monitor and environmental data begins to appear. 
+
+The "ESP32_enviroment_sensor" should be visible Serial.println("The device started, now you can pair it with bluetooth!");
 
 
 If the you encounter an error using I2C communication protocol for the BME, try switching the address from  0x76 to  0x77 at `status = bme.begin(0x77)`.
